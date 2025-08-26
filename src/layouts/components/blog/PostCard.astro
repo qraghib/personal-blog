@@ -74,7 +74,7 @@ const isPartOfSeries = series && Array.isArray(series) && series.length === 2;
       <!-- Author -->
       {authors && authors.length > 0 && (
         <div class="flex items-center">
-          <Icon name="mdi:account" class="w-4 h-4 mr-1" />
+          <IconPlaceholder name="mdi:account" class="w-4 h-4 mr-1" />
           <span>{authors[0]}</span>
         </div>
       )}
@@ -82,7 +82,7 @@ const isPartOfSeries = series && Array.isArray(series) && series.length === 2;
       <!-- Date -->
       {date && (
         <div class="flex items-center">
-          <Icon name="mdi:calendar" class="w-4 h-4 mr-1" />
+          <IconPlaceholder name="mdi:calendar" class="w-4 h-4 mr-1" />
           <time datetime={date.toISOString()}>
             {formatDate(date)}
           </time>
