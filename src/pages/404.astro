@@ -1,12 +1,12 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import { Icon } from 'astro-icon/components';
+import IconPlaceholder from '@layouts/components/common/IconPlaceholder.astro';
 ---
 
 <Layout title="404 - Page Not Found" description="The page you're looking for doesn't exist.">
   <div class="w-full py-16 flex flex-col items-center justify-center text-center px-4">
     <div class="max-w-md">
-      <Icon name="mdi:alert-circle-outline" class="w-24 h-24 text-blue-600 dark:text-blue-400 mx-auto mb-6" />
+      <IconPlaceholder name="mdi:alert-circle-outline" class="w-24 h-24 text-blue-600 dark:text-blue-400 mx-auto mb-6" />
       
       <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
         404
@@ -25,7 +25,7 @@ import { Icon } from 'astro-icon/components';
           href="/" 
           class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors duration-300 flex items-center justify-center"
         >
-          <Icon name="mdi:home" class="w-5 h-5 mr-2" />
+          <IconPlaceholder name="mdi:home" class="w-5 h-5 mr-2" />
           Go Home
         </a>
         
@@ -33,7 +33,7 @@ import { Icon } from 'astro-icon/components';
           href="/blog/" 
           class="px-6 py-3 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 rounded-md transition-colors duration-300 flex items-center justify-center"
         >
-          <Icon name="mdi:book-open" class="w-5 h-5 mr-2" />
+          <IconPlaceholder name="mdi:book-open" class="w-5 h-5 mr-2" />
           Browse Blog
         </a>
       </div>
