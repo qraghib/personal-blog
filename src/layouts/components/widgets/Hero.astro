@@ -78,13 +78,12 @@ const socialIcons = {
             return (
               <a
                 href={url}
-                class={`group inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gray-100 dark:bg-gray-800 hover:${color} dark:hover:${color} transition-all duration-300 hover:scale-110`}
+                class={`group inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gray-100 dark:bg-gray-800 hover:${color} dark:hover:${color} transition-all duration-300 hover:scale-110 text-xs font-semibold`}
                 aria-label={platform.charAt(0).toUpperCase() + platform.slice(1)}
               >
-                <Icon 
-                  name={icon} 
-                  class="w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-white transition-colors duration-300" 
-                />
+                <span class="text-gray-600 dark:text-gray-300 group-hover:text-white transition-colors duration-300">
+                  {platform.charAt(0).toUpperCase() + platform.slice(1)}
+                </span>
               </a>
             );
           })}
