@@ -100,7 +100,7 @@ Here's an example of a Markdown file in Astro:
 ---
 # This is frontmatter - metadata for your content
 title: My First Blog Post
-publishDate: 2023-10-27
+publishDate: 2024-10-27
 author: Dragos
 ---
 
