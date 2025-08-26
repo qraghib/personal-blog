@@ -36,5 +36,14 @@ export default defineConfig({
   },
   
   // Configure Astro integrations
-  integrations: [mdx(), icon(), sitemap()]
+  integrations: [
+    mdx(),
+    icon({
+      iconDir: "src/assets/icons",
+      include: {
+        mdi: ["*"]
+      }
+    }),
+    sitemap()
+  ]
 });
