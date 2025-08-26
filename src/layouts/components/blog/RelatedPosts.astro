@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
-import { Icon } from 'astro-icon/components';
+import IconPlaceholder from '@layouts/components/common/IconPlaceholder.astro';
 import { formatDate } from '@utils/date';
 import SeriesBadge from './SeriesBadge.astro';
 
@@ -164,7 +164,7 @@ const relatedPosts = getRelatedPosts(currentPost, otherPosts, limit);
               {/* Author */}
               {post.data.authors && post.data.authors.length > 0 && (
                 <div class="flex items-center">
-                  <Icon name="mdi:account" class="w-4 h-4 mr-1" />
+                  <IconPlaceholder name="mdi:account" class="w-4 h-4 mr-1" />
                   <span>{post.data.authors[0]}</span>
                 </div>
               )}
@@ -172,7 +172,7 @@ const relatedPosts = getRelatedPosts(currentPost, otherPosts, limit);
               {/* Date */}
               {post.data.date && (
                 <div class="flex items-center">
-                  <Icon name="mdi:calendar" class="w-4 h-4 mr-1" />
+                  <IconPlaceholder name="mdi:calendar" class="w-4 h-4 mr-1" />
                   <time datetime={post.data.date.toISOString()}>
                     {formatDate(post.data.date)}
                   </time>
