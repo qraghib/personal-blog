@@ -1,0 +1,50 @@
+---
+// Temporary replacement for astro-icon while we fix dev toolbar errors
+interface Props {
+  name: string;
+  class?: string;
+}
+
+const { name, class: className = "w-6 h-6" } = Astro.props;
+
+// Extract icon name from mdi: prefix
+const iconName = name.replace('mdi:', '');
+
+// Map common icons to Unicode symbols
+const iconMap: Record<string, string> = {
+  'home': '🏠',
+  'arrow-right': '→',
+  'arrow-left': '←',
+  'chevron-right': '›',
+  'chevron-left': '‹',
+  'calendar': '📅',
+  'clock': '🕐',
+  'user': '👤',
+  'email': '✉️',
+  'phone': '📞',
+  'github': 'GH',
+  'twitter': 'TW',
+  'linkedin': 'LI',
+  'facebook': 'FB',
+  'instagram': 'IG',
+  'youtube': 'YT',
+  'rss': 'RSS',
+  'web': 'WEB',
+  'tag': '🏷️',
+  'folder': '📁',
+  'book': '📖',
+  'search': '🔍',
+  'menu': '☰',
+  'close': '✕',
+  'eye': '👁️',
+  'heart': '♥',
+  'star': '⭐',
+  'share': '📤'
+};
+
+const iconSymbol = iconMap[iconName] || iconName.charAt(0).toUpperCase();
+---
+
+<span class={`inline-block text-center ${className}`} aria-label={iconName}>
+  {iconSymbol}
+</span>
