@@ -2,10 +2,26 @@
   "site": {
     "title": "Gearhead Q Blog",
     "base_url": "https://gearhead-q.com",
-    "logo_text": "Gearhead Q"
+    "logo_text": "Gearhead Q",
+    "trailing_slash": true,
+    "favicon": "/favicon.ico"
   },
+
+  "settings": {
+  },
+
   "metadata": {
     "meta_author": "Q Ragheb",
-    "meta_description": "All about tech and micro engineering"
+    "meta_description": "All about tech and micro-engineering"
+  },
+
+  "params": {
+    "contact_form_action": "#"
+  },
+
+  "contactinfo": {
+    "address": "Your Address",
+    "email": "your.email@example.com",
+    "phone": "+1 234 567 8900"
   }
 }
