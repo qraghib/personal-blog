@@ -2,7 +2,7 @@
 title: "Introduction to Cybersecurity"
 meta_title: "Cybersecurity Fundamentals: Protecting Your Digital Assets"
 description: "Learn the basics of cybersecurity, including common threats, defense strategies, and best practices for individuals and organizations."
-date: 2023-09-05
+date: 2024-09-05
 image: "../../assets/images/cybersecurity.svg"
 authors: ["dragos"]
 categories: ["Cybersecurity"]

@@ -2,7 +2,7 @@
 title: "Getting Started with Astro - Part 2: Components and Content"
 meta_title: "Getting Started with Astro - Part 2: Components and Content"
 description: "Learn how to create reusable components in Astro and manage content with Markdown and data fetching capabilities."
-date: 2023-10-27
+date: 2024-10-27
 image: "../../assets/images/astro-components.svg"
 authors: ["dragos"]
 categories: ["Web Development"]
