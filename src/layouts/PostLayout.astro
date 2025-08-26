@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import { Icon } from 'astro-icon/components';
+import IconPlaceholder from '@layouts/components/common/IconPlaceholder.astro';
 import Layout from '@layouts/Layout.astro';
 import { formatDate } from '@utils/date';
 import PostHeadings from '@layouts/components/table-of-contents/PostHeadings.astro';
@@ -57,7 +57,7 @@ breadcrumbs.push({ name: title, url: canonicalURL });
       <div class="flex flex-wrap items-center text-gray-500 dark:text-gray-400 mb-4 gap-4">
         <!-- Date -->
         <div class="flex items-center">
-          <Icon name="mdi:calendar" class="w-5 h-5 mr-1" />
+          <IconPlaceholder name="mdi:calendar" class="w-5 h-5 mr-1" />
           <time datetime={date?.toISOString()}>
             {date ? formatDate(date) : ''}
           </time>
@@ -68,7 +68,7 @@ breadcrumbs.push({ name: title, url: canonicalURL });
         <!-- Categories -->
         {categories && categories.length > 0 && (
           <div class="flex items-center">
-            <Icon name="mdi:folder" class="w-5 h-5 mr-1" />
+            <IconPlaceholder name="mdi:folder" class="w-5 h-5 mr-1" />
             <div class="flex flex-wrap gap-2">
               {categories.map((category: string) => (
                 <a 
@@ -85,7 +85,7 @@ breadcrumbs.push({ name: title, url: canonicalURL });
         <!-- Author -->
         {authors && authors.length > 0 && (
           <div class="flex items-center">
-            <Icon name="mdi:account" class="w-5 h-5 mr-1" />
+            <IconPlaceholder name="mdi:account" class="w-5 h-5 mr-1" />
             <div class="flex flex-wrap gap-2">
               {authors.map((author: string) => (
                 <a 

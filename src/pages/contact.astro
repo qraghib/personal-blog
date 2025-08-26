@@ -1,6 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import { Icon } from "astro-icon/components";
+import IconPlaceholder from "@layouts/components/common/IconPlaceholder.astro";
 import config from "@config/config.json";
 
 // Contact information from config file
@@ -28,7 +28,7 @@ const markdownify = (content) => {
           <ul class="flex flex-col space-y-8">
             <li>
               <div class="flex text-gray-900 dark:text-white items-center text-xl">
-                <Icon
+                <IconPlaceholder
                   name="mdi:card-account-details-star-outline"
                   class="mr-3 text-blue-600 dark:text-blue-400 text-2xl"
                 />
@@ -38,7 +38,7 @@ const markdownify = (content) => {
             </li>
             <li>
               <div class="flex text-gray-900 dark:text-white items-center text-xl">
-                <Icon name="mdi:email" class="mr-3 text-blue-600 dark:text-blue-400 text-2xl" />
+                <IconPlaceholder name="mdi:email" class="mr-3 text-blue-600 dark:text-blue-400 text-2xl" />
                 <p class="font-semibold">Email</p>
               </div>
               <p class="mt-2 leading-5 pl-8 text-gray-700 dark:text-gray-300">
@@ -47,7 +47,7 @@ const markdownify = (content) => {
             </li>
             <li>
               <div class="flex text-gray-900 dark:text-white items-center text-xl">
-                <Icon name="mdi:phone" class="mr-3 text-blue-600 dark:text-blue-400 text-2xl" />
+                <IconPlaceholder name="mdi:phone" class="mr-3 text-blue-600 dark:text-blue-400 text-2xl" />
                 <p class="font-semibold">Phone</p>
               </div>
               <p class="mt-2 leading-5 pl-8 text-gray-700 dark:text-gray-300">

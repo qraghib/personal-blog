@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '@layouts/Layout.astro';
-import { Icon } from 'astro-icon/components';
+import IconPlaceholder from '@layouts/components/common/IconPlaceholder.astro';
 import Breadcrumb from '@layouts/components/common/Breadcrumb.astro';
 import { siteConfig } from '@config/site'; // Import siteConfig
 
@@ -97,7 +97,7 @@ const breadcrumbs = [
         {seriesList.map(series => (
           <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border border-gray-200 dark:border-gray-700">
             <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
-              <Icon name="mdi:book-open-variant" class="w-6 h-6 mr-2 text-blue-600 dark:text-blue-400" />
+              <IconPlaceholder name="mdi:book-open-variant" class="w-6 h-6 mr-2 text-blue-600 dark:text-blue-400" />
               {series.name}
               <span class="ml-3 text-sm font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded-full">
                 {series.count} {series.count === 1 ? 'part' : 'parts'}

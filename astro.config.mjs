@@ -2,7 +2,7 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import mdx from '@astrojs/mdx';
-import icon from 'astro-icon';
+// import icon from 'astro-icon'; // Temporarily removed due to dev toolbar errors
 import sitemap from '@astrojs/sitemap';
 import path from 'path';
 
@@ -36,5 +36,14 @@ export default defineConfig({
   },
   
   // Configure Astro integrations
-  integrations: [mdx(), icon(), sitemap()]
+  integrations: [
+    mdx(),
+    // icon({
+    //   iconDir: "src/assets/icons",
+    //   include: {
+    //     mdi: ["*"]
+    //   }
+    // }), // Temporarily removed due to dev toolbar errors
+    sitemap()
+  ]
 });

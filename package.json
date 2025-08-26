@@ -16,7 +16,6 @@
     "@iconify-json/mdi": "^1.2.3",
     "@tailwindcss/vite": "^4.1.7",
     "astro": "^5.7.14",
-    "astro-icon": "^1.1.5",
     "fuse.js": "^7.1.0",
     "tailwindcss": "^4.1.7"
   },

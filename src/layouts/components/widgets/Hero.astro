@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon/components';
+// import { Icon } from 'astro-icon/components'; // Temporarily removed due to dev toolbar errors
 import socialData from '@config/social.json';
 
 // Filter out empty social links
@@ -43,14 +43,9 @@ const socialIcons = {
         <h1 class="text-5xl md:text-[3.50rem] font-bold leading-tighter tracking-tighter mb-4 font-heading text-gray-900 dark:text-white">
           Welcome to
           <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-500 sm:whitespace-nowrap"
-            >Bit Doze</span
+            >Gearhead Q Blog</span
           >
         </h1>
-        <div class="max-w-3xl mx-auto">
-          <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
-            Join the community to find out more about, VPS, blogging, CMS.
-          </p>
-        </div>
 
         <div class="flex justify-center gap-4">
           {socialLinks.map(([platform, url]) => {
@@ -78,13 +73,12 @@ const socialIcons = {
             return (
               <a
                 href={url}
-                class={`group inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gray-100 dark:bg-gray-800 hover:${color} dark:hover:${color} transition-all duration-300 hover:scale-110`}
+                class={`group inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gray-100 dark:bg-gray-800 hover:${color} dark:hover:${color} transition-all duration-300 hover:scale-110 text-xs font-semibold`}
                 aria-label={platform.charAt(0).toUpperCase() + platform.slice(1)}
               >
-                <Icon 
-                  name={icon} 
-                  class="w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-white transition-colors duration-300" 
-                />
+                <span class="text-gray-600 dark:text-gray-300 group-hover:text-white transition-colors duration-300">
+                  {platform.charAt(0).toUpperCase() + platform.slice(1)}
+                </span>
               </a>
             );
           })}

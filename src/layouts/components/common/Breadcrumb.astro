@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon/components';
+import IconPlaceholder from '@components/common/IconPlaceholder.astro';
 
 interface BreadcrumbItem {
   name: string;
@@ -19,7 +19,7 @@ const { items, className = "" } = Astro.props;
     {items.map((item, index) => (
       <li class="flex items-center">
         {index > 0 && (
-          <Icon name="mdi:chevron-right" class="w-4 h-4 mx-1 text-gray-500 dark:text-gray-400" />
+          <IconPlaceholder name="mdi:chevron-right" class="w-4 h-4 mx-1 text-gray-500 dark:text-gray-400" />
         )}
         {index === items.length - 1 ? (
           <span class="text-gray-700 dark:text-gray-300" aria-current="page">{item.name}</span>
