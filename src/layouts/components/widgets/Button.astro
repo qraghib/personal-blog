@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon/components';
+import IconPlaceholder from '@components/common/IconPlaceholder.astro';
 
 export interface Props {
 	// New prop names
@@ -126,7 +126,7 @@ const buttonClasses = `not-prose inline-flex items-center justify-center rounded
 	{/* Icon on the left side */}
 	{hasIcon && iconPosition === 'left' && (
 		<span class={`inline-flex ${!showIconOnly ? iconMargin : ''}`}>
-			<Icon name={`mdi:${icon}`} class={iconSizes[size]} aria-hidden="true" />
+			<IconPlaceholder name={`mdi:${icon}`} class={iconSizes[size]} aria-hidden="true" />
 		</span>
 	)}
 	
@@ -136,7 +136,7 @@ const buttonClasses = `not-prose inline-flex items-center justify-center rounded
 	{/* Icon on the right side */}
 	{hasIcon && iconPosition === 'right' && (
 		<span class={`inline-flex ${!showIconOnly ? iconMargin : ''}`}>
-			<Icon name={`mdi:${icon}`} class={iconSizes[size]} aria-hidden="true" />
+			<IconPlaceholder name={`mdi:${icon}`} class={iconSizes[size]} aria-hidden="true" />
 		</span>
 	)}
 </a>
