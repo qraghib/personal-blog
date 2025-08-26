@@ -1,5 +1,5 @@
 ---
-title: Dragos
+title: Q Mon
 image: "/images/authors/dragos.webp"
 description: Dragos the author of the website
 social:

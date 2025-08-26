@@ -4,7 +4,7 @@ description: "Our website terms and conditions"
 draft: false
 ---
 
-Last updated: January 1, 2023
+Last updated: January 1, 2025
 
 Please read these terms and conditions carefully before using Our Service.
 
